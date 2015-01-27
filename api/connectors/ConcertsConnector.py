@@ -6,8 +6,8 @@ class ConcertsConnector(BaseConnector, ArtistService):
         BaseConnector.__init__(self)
         ArtistService.__init__(self)
 
-    def get_connected_concerts(self, api_key, location, artist, page_size, page_number):
+    def connected_get_concerts(self, api_key, location, artist, page_size, page_number):
         return self.connect(api_key, self.http.request('GET', self.api_url() + 'concerts' + '?api_key=' + self.api_key() + '&location=' + location + '&artist=' + artist + '&page_size=' + page_size + '&page_number=' + page_number).data)
 
-    def get_connected_concert(self, api_key, id):
+    def connected_get_concert(self, api_key, id):
         return self.connect(api_key, self.http.request('GET', self.api_url() + 'concerts/' + id + '?api_key=' + self.api_key()).data)

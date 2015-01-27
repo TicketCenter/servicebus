@@ -7,13 +7,13 @@ class Artists(ArtistsConnector):
         ArtistsConnector.__init__(self)
 
     def get_artists(self, request):
-        return HttpResponse(self.get_connected_artists(request.GET.get('api_key', ''),
+        return HttpResponse(self.connected_get_artists(request.GET.get('api_key', ''),
                                               request.GET.get('characters', 'a'),
                                               request.GET.get('page_size', ''),
                                               request.GET.get('page_number', '')),
                             content_type='application/json')
 
     def get_artist(self, request, name):
-        return HttpResponse(self.get_connected_artist(request.GET.get('api_key', ''),
+        return HttpResponse(self.connected_get_artist(request.GET.get('api_key', ''),
                                              name),
                             content_type='application/json')
