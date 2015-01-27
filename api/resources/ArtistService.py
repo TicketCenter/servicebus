@@ -7,5 +7,5 @@ class ArtistService(Reader):
     def __init__(self):
         Reader.__init__(self)
 
-    def get(self, verb, resource, parameters=None):
+    def get(self, verb, resource, parameters=''):
         return self.read(verb, self.__API_URL + resource + '?api_key=' + self.__API_KEY + parameters)
