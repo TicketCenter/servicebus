@@ -1,4 +1,3 @@
-
 class ArtistService():
     __API_URL = 'http://artistservice.ticketcenter.hanze.nberlijn.nl/api/'
     __API_KEY = 'pz76SUD2HE36689AMzF0A2m9pZrk2fUZ'
