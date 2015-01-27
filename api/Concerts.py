@@ -2,7 +2,6 @@ from django.http import HttpResponse
 
 from api.connectors.ConcertsConnector import ConcertsConnector
 
-
 class Concerts(ConcertsConnector):
     def __init__(self):
         ConcertsConnector.__init__(self)

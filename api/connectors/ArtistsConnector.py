@@ -14,4 +14,5 @@ class ArtistsConnector(BaseConnector, ArtistService):
 
     def connected_get_artist(self, api_key, name):
         return self.connect(api_key, self.http.request('GET',
-                                                       self.api_url() + 'artists/' + urllib.quote(name) + '?api_key=' + self.api_key()).data)
+                                                       self.api_url() + 'artists/' + urllib.quote(
+                                                           name) + '?api_key=' + self.api_key()).data)
