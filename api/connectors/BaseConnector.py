@@ -3,6 +3,12 @@ import simplejson
 
 from api.config.API import API
 
+"""
+@class      BaseConnector
+@author     Nils Berlijn
+@version    1.0
+@since      1.0
+"""
 class BaseConnector():
     api = API()
     http = urllib3.PoolManager()

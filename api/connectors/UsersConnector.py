@@ -1,6 +1,12 @@
 from api.services.TicketService import TicketService
 from api.connectors.BaseConnector import BaseConnector
 
+"""
+@class      UsersConnector
+@author     Nils Berlijn
+@version    1.0
+@since      1.0
+"""
 # TODO: Redirect POST, PUT and DELETE requests
 class UsersConnector(BaseConnector, TicketService):
     def __init__(self):

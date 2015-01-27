@@ -1,3 +1,9 @@
+"""
+@class      TicketService
+@author     Nils Berlijn
+@version    1.0
+@since      1.0
+"""
 # TODO: Add valid API information
 class TicketService():
     __API_URL = ''

@@ -2,6 +2,12 @@ from django.http import HttpResponse
 
 from api.connectors.OrdersConnector import OrdersConnector
 
+"""
+@class      Orders
+@author     Nils Berlijn
+@version    1.0
+@since      1.0
+"""
 # TODO: Redirect POST, PUT and DELETE requests
 class Orders(OrdersConnector):
     def __init__(self):

@@ -1,6 +1,12 @@
 from api.services.ArtistService import ArtistService
 from api.connectors.BaseConnector import BaseConnector
 
+"""
+@class      ConcertsConnector
+@author     Nils Berlijn
+@version    1.0
+@since      1.0
+"""
 class ConcertsConnector(BaseConnector, ArtistService):
     def __init__(self):
         BaseConnector.__init__(self)

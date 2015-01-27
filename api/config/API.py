@@ -1,3 +1,9 @@
+"""
+@class      API
+@author     Nils Berlijn
+@version    1.0
+@since      1.0
+"""
 class API():
     __API_KEY = 'M6j3r3TQ71o8Z2y1WO7T12743695Y5Fd'
 
