@@ -1,20 +1,23 @@
 from django.http import HttpResponse
 
+from api.dao.ConcertsDAO import ConcertsDAO
+
 __author__ = 'Nils'
 
 class Concerts():
+    dao = ConcertsDAO()
+
     def __init__(self):
         pass
 
-    @staticmethod
-    def concerts(request):
-        return HttpResponse('ALL CONCERTS ' +
-                            request.GET.get('location', '') +
-                            request.GET.get('page_size', '') +
-                            request.GET.get('page_number', '')
-        )
+    def concerts(self, request):
+        return HttpResponse(self.dao.concerts(request.GET.get('api_key', ''),
+                                              request.GET.get('location', ''),
+                                              request.GET.get('page_size', ''),
+                                              request.GET.get('page_number', '')),
+                            content_type='application/json')
 
-    # noinspection PyUnusedLocal
-    @staticmethod
-    def concert(request, concert_id):
-        return HttpResponse('ONE CONCERT ' + concert_id)
+    def concert(self, request, concert_id):
+        return HttpResponse(self.dao.concert(request.GET.get('api_key', ''),
+                                             concert_id),
+                            content_type='application/json')
