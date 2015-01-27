@@ -19,19 +19,19 @@ class Orders(OrdersConnector):
 
     def post_order_registered_user(self, request, user_id, token):
         return HttpResponse(self.connected_post_order_registered_user(request.GET.get('api_key', ''),
-                                                         user_id,
-                                                         token),
+                                                                      user_id,
+                                                                      token),
                             content_type='application/json')
 
     def get_orders_registered_user(self, request, user_id, token):
         return HttpResponse(self.connected_get_orders_registered_user(request.GET.get('api_key', ''),
-                                                         user_id,
-                                                         token),
+                                                                      user_id,
+                                                                      token),
                             content_type='application/json')
 
     def get_order_registered_user(self, request, user_id, token, order_id):
         return HttpResponse(self.connected_get_order_registered_user(request.GET.get('api_key', ''),
-                                                         user_id,
-                                                         token,
-                                                         order_id),
+                                                                     user_id,
+                                                                     token,
+                                                                     order_id),
                             content_type='application/json')

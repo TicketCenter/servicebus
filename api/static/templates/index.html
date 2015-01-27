@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Service Bus API</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Service Bus API">
@@ -17,20 +17,26 @@
 <body>
 <div class="container">
     <div class="page-header">
-        <h1>Service Bus <small>API Reference</small></h1>
-        <p>An overview of all the available resources. Click on a specific resource for more information about that resource.</p>
+        <h1>Service Bus
+            <small>API Reference</small>
+        </h1>
+        <p>An overview of all the available resources. Click on a specific resource for more information about that
+            resource.</p>
     </div>
     <h4>Concerts</h4>
+
     <div class="panel-group" id="accordionOne" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionOne" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">/api/concerts</a>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionOne" href="#collapseOne"
+                       aria-expanded="false" aria-controls="collapseOne">/api/concerts</a>
                 </h4>
             </div>
             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                     <p>An overview of the resource.</p>
+
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -46,7 +52,8 @@
                             <tr>
                                 <td><kbd>GET</kbd></td>
                                 <td><a href="/api/concerts" target="_blank">/api/concerts</a></td>
-                                <td><a href="/api/concerts?api_key={api_key}" target="_blank">?api_key={api_key}</a></td>
+                                <td><a href="/api/concerts?api_key={api_key}" target="_blank">?api_key={api_key}</a>
+                                </td>
                                 <td></td>
                                 <td>Get concerts.</td>
                             </tr>
@@ -54,46 +61,55 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="/api/concerts?api_key={api_key}&location={location}" target="_blank">location={location}</a></td>
+                                <td><a href="/api/concerts?api_key={api_key}&location={location}" target="_blank">location={location}</a>
+                                </td>
                                 <td>Get concerts filtered on location.</td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="/api/concerts?api_key={api_key}&artist={artist}" target="_blank">artist={artist}</a></td>
+                                <td><a href="/api/concerts?api_key={api_key}&artist={artist}" target="_blank">artist={artist}</a>
+                                </td>
                                 <td>Get concerts filtered on artist.</td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="/api/concerts?api_key={api_key}&page_size={page_size}" target="_blank">page_size={page_size}</a></td>
+                                <td><a href="/api/concerts?api_key={api_key}&page_size={page_size}" target="_blank">page_size={page_size}</a>
+                                </td>
                                 <td>Get concerts filtered on page size.</td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="/api/concerts?api_key={api_key}&page_number={page_number}" target="_blank">page_number={page_number}</a></td>
+                                <td><a href="/api/concerts?api_key={api_key}&page_number={page_number}" target="_blank">page_number={page_number}</a>
+                                </td>
                                 <td>Get concerts filtered on page number</td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="small"><em><strong>Example:</strong> <a href="/api/concerts?api_key={api_key}&location=Netherlands&artist=Anouk&page_size=10&page_number=1" target="_blank">/api/concerts?api_key={api_key}&location=Netherlands&artist=Anouk&page_size=10&page_number=1</a></em></p>
+                    <p class="small"><em><strong>Example:</strong> <a
+                            href="/api/concerts?api_key={api_key}&location=Netherlands&artist=Anouk&page_size=10&page_number=1"
+                            target="_blank">/api/concerts?api_key={api_key}&location=Netherlands&artist=Anouk&page_size=10&page_number=1</a></em>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingTwo">
                 <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionOne" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">/api/concerts/{id}</a>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionOne" href="#collapseTwo"
+                       aria-expanded="false" aria-controls="collapseTwo">/api/concerts/{id}</a>
                 </h4>
             </div>
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
                     <p>An overview of the resource.</p>
+
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -108,28 +124,34 @@
                             <tr>
                                 <td><kbd>GET</kbd></td>
                                 <td><a href="/api/concerts/{id}" target="_blank">/api/concerts/{id}</a></td>
-                                <td><a href="/api/concerts/{id}?api_key={api_key}" target="_blank">?api_key={api_key}</a></td>
+                                <td><a href="/api/concerts/{id}?api_key={api_key}"
+                                       target="_blank">?api_key={api_key}</a></td>
                                 <td>Get a concert.</td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="small"><em><strong>Example:</strong> <a href="api/concerts/E0-001-075694702-5?api_key={api_key}" target="_blank">/api/concerts/E0-001-075694702-5?api_key={api_key}</a></em></p>
+                    <p class="small"><em><strong>Example:</strong> <a
+                            href="api/concerts/E0-001-075694702-5?api_key={api_key}" target="_blank">/api/concerts/E0-001-075694702-5?api_key={api_key}</a></em>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <h4>Artists</h4>
+
     <div class="panel-group" id="accordionTwo" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingThree">
                 <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">/api/artists</a>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseThree"
+                       aria-expanded="false" aria-controls="collapseThree">/api/artists</a>
                 </h4>
             </div>
             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
                     <p>An overview of the resource.</p>
+
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -153,39 +175,47 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="/api/artists?api_key={api_key}&characters={characters}" target="_blank">characters={characters}</a></td>
+                                <td><a href="/api/artists?api_key={api_key}&characters={characters}" target="_blank">characters={characters}</a>
+                                </td>
                                 <td>Get artists filtered on characters.</td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="/api/artists?api_key={api_key}&page_size={page_size}" target="_blank">page_size={page_size}</a></td>
+                                <td><a href="/api/artists?api_key={api_key}&page_size={page_size}" target="_blank">page_size={page_size}</a>
+                                </td>
                                 <td>Get artists filtered on page size.</td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="/api/artists?api_key={api_key}&page_number={page_number}" target="_blank">page_number={page_number}</a></td>
+                                <td><a href="/api/artists?api_key={api_key}&page_number={page_number}" target="_blank">page_number={page_number}</a>
+                                </td>
                                 <td>Get artists filtered on page number</td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="small"><em><strong>Example:</strong> <a href="/api/artists?api_key={api_key}&characters=a&page_size=10&page_number=1" target="_blank">/api/artists?api_key={api_key}&characters=a&page_size=10&page_number=1</a></em></p>
+                    <p class="small"><em><strong>Example:</strong> <a
+                            href="/api/artists?api_key={api_key}&characters=a&page_size=10&page_number=1"
+                            target="_blank">/api/artists?api_key={api_key}&characters=a&page_size=10&page_number=1</a></em>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingFour">
                 <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">/api/artists/{name}</a>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseFour"
+                       aria-expanded="false" aria-controls="collapseFour">/api/artists/{name}</a>
                 </h4>
             </div>
             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                 <div class="panel-body">
                     <p>An overview of the resource.</p>
+
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -200,28 +230,34 @@
                             <tr>
                                 <td><kbd>GET</kbd></td>
                                 <td><a href="/api/artists/{name}" target="_blank">/api/artists/{name}</a></td>
-                                <td><a href="/api/artists/{name}?api_key={api_key}" target="_blank">?api_key={api_key}</a></td>
+                                <td><a href="/api/artists/{name}?api_key={api_key}"
+                                       target="_blank">?api_key={api_key}</a></td>
                                 <td>Get an artist.</td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="small"><em><strong>Example:</strong> <a href="/api/artists/Anouk?api_key={api_key}" target="_blank">/api/artists/Anouk?api_key={api_key}</a></em></p>
+                    <p class="small"><em><strong>Example:</strong> <a href="/api/artists/Anouk?api_key={api_key}"
+                                                                      target="_blank">/api/artists/Anouk?api_key={api_key}</a></em>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <h4>Users</h4>
+
     <div class="panel-group" id="accordionThree" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingFive">
                 <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionThree" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">/api/users</a>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionThree" href="#collapseFive"
+                       aria-expanded="false" aria-controls="collapseFive">/api/users</a>
                 </h4>
             </div>
             <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
                     <p>An overview of the resource.</p>
+
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -242,19 +278,23 @@
                             </tbody>
                         </table>
                     </div>
-                    <p class="small"><em><strong>Example:</strong> <a href="/api/users?api_key={api_key}" target="_blank">/api/users?api_key={api_key}</a></em></p>
+                    <p class="small"><em><strong>Example:</strong> <a href="/api/users?api_key={api_key}"
+                                                                      target="_blank">/api/users?api_key={api_key}</a></em>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingSix">
                 <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionThree" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">/api/users/login</a>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionThree" href="#collapseSix"
+                       aria-expanded="false" aria-controls="collapseSix">/api/users/login</a>
                 </h4>
             </div>
             <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
                     <p>An overview of the resource.</p>
+
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -269,25 +309,30 @@
                             <tr>
                                 <td><kbd>POST</kbd></td>
                                 <td><a href="/api/users/login" target="_blank">/api/users/login</a></td>
-                                <td><a href="/api/users/login?api_key={api_key}" target="_blank">?api_key={api_key}</a></td>
+                                <td><a href="/api/users/login?api_key={api_key}" target="_blank">?api_key={api_key}</a>
+                                </td>
                                 <td>Login a user.</td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="small"><em><strong>Example:</strong> <a href="/api/users/login?api_key={api_key}" target="_blank">/api/users/login?api_key={api_key}</a></em></p>
+                    <p class="small"><em><strong>Example:</strong> <a href="/api/users/login?api_key={api_key}"
+                                                                      target="_blank">/api/users/login?api_key={api_key}</a></em>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingSeven">
                 <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionThree" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">/api/users/{id}/{token}</a>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionThree" href="#collapseSeven"
+                       aria-expanded="false" aria-controls="collapseSeven">/api/users/{id}/{token}</a>
                 </h4>
             </div>
             <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
                 <div class="panel-body">
                     <p>An overview of the resource.</p>
+
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -302,40 +347,48 @@
                             <tr>
                                 <td><kbd>GET</kbd></td>
                                 <td><a href="/api/users/{id}/{token}" target="_blank">/api/users/{id}/{token}</a></td>
-                                <td><a href="/api/users/{id}/{token}?api_key={api_key}" target="_blank">?api_key={api_key}</a></td>
+                                <td><a href="/api/users/{id}/{token}?api_key={api_key}" target="_blank">?api_key={api_key}</a>
+                                </td>
                                 <td>Get a user.</td>
                             </tr>
                             <tr>
                                 <td><kbd>PUT</kbd></td>
                                 <td><a href="/api/users/{id}/{token}" target="_blank">/api/users/{id}/{token}</a></td>
-                                <td><a href="/api/users/{id}/{token}?api_key={api_key}" target="_blank">?api_key={api_key}</a></td>
+                                <td><a href="/api/users/{id}/{token}?api_key={api_key}" target="_blank">?api_key={api_key}</a>
+                                </td>
                                 <td>Update a user.</td>
                             </tr>
                             <tr>
                                 <td><kbd>DELETE</kbd></td>
                                 <td><a href="/api/users/{id}/{token}" target="_blank">/api/users/{id}/{token}</a></td>
-                                <td><a href="/api/users/{id}/{token}?api_key={api_key}" target="_blank">?api_key={api_key}</a></td>
+                                <td><a href="/api/users/{id}/{token}?api_key={api_key}" target="_blank">?api_key={api_key}</a>
+                                </td>
                                 <td>Delete a user.</td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="small"><em><strong>Example:</strong> <a href="/api/users/{id}/{token}?api_key={api_key}" target="_blank">/api/users/{id}/{token}?api_key={api_key}</a></em></p>
+                    <p class="small"><em><strong>Example:</strong> <a href="/api/users/{id}/{token}?api_key={api_key}"
+                                                                      target="_blank">/api/users/{id}/{token}?api_key={api_key}</a></em>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-   <h4>Orders</h4>
+    <h4>Orders</h4>
+
     <div class="panel-group" id="accordionFour" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingEight">
                 <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionFour" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">/api/orders</a>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionFour" href="#collapseEight"
+                       aria-expanded="false" aria-controls="collapseEight">/api/orders</a>
                 </h4>
             </div>
             <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
                     <p>An overview of the resource.</p>
+
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -356,19 +409,23 @@
                             </tbody>
                         </table>
                     </div>
-                    <p class="small"><em><strong>Example:</strong> <a href="/api/orders?api_key={api_key}" target="_blank">/api/orders?api_key={api_key}</a></em></p>
+                    <p class="small"><em><strong>Example:</strong> <a href="/api/orders?api_key={api_key}"
+                                                                      target="_blank">/api/orders?api_key={api_key}</a></em>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingNine">
                 <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionFour" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">/api/orders/{user_id}/{token}</a>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionFour" href="#collapseNine"
+                       aria-expanded="false" aria-controls="collapseNine">/api/orders/{user_id}/{token}</a>
                 </h4>
             </div>
             <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
                     <p>An overview of the resource.</p>
+
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -382,32 +439,40 @@
                             <tbody>
                             <tr>
                                 <td><kbd>POST</kbd></td>
-                                <td><a href="/api/orders/{user_id}/{token}" target="_blank">/api/orders/{user_id}/{token}</a></td>
-                                <td><a href="/api/orders/{user_id}/{token}?api_key={api_key}" target="_blank">?api_key={api_key}</a></td>
+                                <td><a href="/api/orders/{user_id}/{token}" target="_blank">/api/orders/{user_id}/{token}</a>
+                                </td>
+                                <td><a href="/api/orders/{user_id}/{token}?api_key={api_key}" target="_blank">?api_key={api_key}</a>
+                                </td>
                                 <td>Create a new order (from an registered user).</td>
                             </tr>
                             <tr>
                                 <td><kbd>GET</kbd></td>
-                                <td><a href="/api/orders/{user_id}/{token}" target="_blank">/api/orders/{user_id}/{token}</a></td>
-                                <td><a href="/api/orders/{user_id}/{token}?api_key={api_key}" target="_blank">?api_key={api_key}</a></td>
+                                <td><a href="/api/orders/{user_id}/{token}" target="_blank">/api/orders/{user_id}/{token}</a>
+                                </td>
+                                <td><a href="/api/orders/{user_id}/{token}?api_key={api_key}" target="_blank">?api_key={api_key}</a>
+                                </td>
                                 <td>Get orders (from a registered user).</td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="small"><em><strong>Example:</strong> <a href="/api/orders/{user_id}/{token}?api_key={api_key}" target="_blank">/api/orders/{user_id}/{token}?api_key={api_key}</a></em></p>
+                    <p class="small"><em><strong>Example:</strong> <a
+                            href="/api/orders/{user_id}/{token}?api_key={api_key}" target="_blank">/api/orders/{user_id}/{token}?api_key={api_key}</a></em>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingTen">
                 <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionFour" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">/api/orders/{user_id}/{token}/{order_id}</a>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionFour" href="#collapseTen"
+                       aria-expanded="false" aria-controls="collapseTen">/api/orders/{user_id}/{token}/{order_id}</a>
                 </h4>
             </div>
             <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
                 <div class="panel-body">
                     <p>An overview of the resource.</p>
+
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -421,14 +486,18 @@
                             <tbody>
                             <tr>
                                 <td><kbd>GET</kbd></td>
-                                <td><a href="/api/orders/{user_id}/{token}/{order_id}" target="_blank">/api/orders/{user_id}/{token}/{order_id}</a></td>
-                                <td><a href="/api/orders/{user_id}/{token}/{order_id}?api_key={api_key}" target="_blank">?api_key={api_key}</a></td>
+                                <td><a href="/api/orders/{user_id}/{token}/{order_id}" target="_blank">/api/orders/{user_id}/{token}/{order_id}</a>
+                                </td>
+                                <td><a href="/api/orders/{user_id}/{token}/{order_id}?api_key={api_key}"
+                                       target="_blank">?api_key={api_key}</a></td>
                                 <td>Get an order (from an existing user).</td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="small"><em><strong>Example:</strong> <a href="/api/orders/{id}/{token}/{order_id}?api_key={api_key}" target="_blank">/api/orders/{id}/{token}/{order_id}?api_key={api_key}</a></em></p>
+                    <p class="small"><em><strong>Example:</strong> <a
+                            href="/api/orders/{id}/{token}/{order_id}?api_key={api_key}" target="_blank">/api/orders/{id}/{token}/{order_id}?api_key={api_key}</a></em>
+                    </p>
                 </div>
             </div>
         </div>

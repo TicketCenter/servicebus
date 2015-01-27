@@ -23,7 +23,7 @@ class BaseConnector():
     @staticmethod
     def __unauthorized():
         return simplejson.dumps({
-                'status': 401,
-                'message': 'Unauthorized',
-                'description': 'A valid API key is required.'
-            })
+            'status': 401,
+            'message': 'Unauthorized',
+            'description': 'A valid API key is required.'
+        })

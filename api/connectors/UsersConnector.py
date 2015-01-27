@@ -8,16 +8,21 @@ class UsersConnector(BaseConnector, TicketService):
         TicketService.__init__(self)
 
     def connected_post_user(self, api_key):
-        return self.connect(api_key, self.http.request('POST', self.api_url() + 'users'))
+        return self.connect(api_key, self.http.request('POST',
+                                                       self.api_url() + 'users'))
 
     def connected_post_user_login(self, api_key):
-        return self.connect(api_key, self.http.request('POST', self.api_url() + 'users/login'))
+        return self.connect(api_key, self.http.request('POST',
+                                                       self.api_url() + 'users/login'))
 
     def connected_get_user(self, api_key, id, token):
-        return self.connect(api_key, self.http.request('POST', self.api_url() + 'users/' + id + '/' + token))
+        return self.connect(api_key, self.http.request('POST',
+                                                       self.api_url() + 'users/' + id + '/' + token))
 
     def connected_put_user(self, api_key, id, token):
-        return self.connect(api_key, self.http.request('PUT', self.api_url() + 'users/' + id + '/' + token))
+        return self.connect(api_key, self.http.request('PUT',
+                                                       self.api_url() + 'users/' + id + '/' + token))
 
     def connected_delete_user(self, api_key, id, token):
-        return self.connect(api_key, self.http.request('DELETE', self.api_url() + 'users/' + id + '/' + token))
+        return self.connect(api_key, self.http.request('DELETE',
+                                                       self.api_url() + 'users/' + id + '/' + token))

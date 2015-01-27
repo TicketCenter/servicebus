@@ -25,18 +25,18 @@ class Users(UsersConnector):
 
     def get_user(self, request, id, token):
         return HttpResponse(self.connected_get_user(request.GET.get('api_key', ''),
-                                                         id,
-                                                         token),
+                                                    id,
+                                                    token),
                             content_type='application/json')
 
     def put_user(self, request, id, token):
         return HttpResponse(self.connected_put_user(request.GET.get('api_key', ''),
-                                                         id,
-                                                         token),
+                                                    id,
+                                                    token),
                             content_type='application/json')
 
     def delete_user(self, request, id, token):
         return HttpResponse(self.connected_delete_user(request.GET.get('api_key', ''),
-                                                         id,
-                                                         token),
+                                                       id,
+                                                       token),
                             content_type='application/json')
