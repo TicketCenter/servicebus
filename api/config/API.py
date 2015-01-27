@@ -1,5 +1,3 @@
-__author__ = 'Nils'
-
 class API():
     __API_KEY = 'M6j3r3TQ71o8Z2y1WO7T12743695Y5Fd'
 

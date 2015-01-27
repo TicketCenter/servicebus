@@ -1,6 +1,5 @@
 from api.resources.ArtistService import ArtistService
 from api.dao.BaseDAO import BaseDAO
-__author__ = 'Nils'
 
 class ConcertsDAO(BaseDAO):
     artistService = ArtistService()

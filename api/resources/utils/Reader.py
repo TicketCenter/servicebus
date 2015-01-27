@@ -1,7 +1,5 @@
 import urllib3
 
-__author__ = 'Nils'
-
 class Reader():
     def __init__(self):
         pass

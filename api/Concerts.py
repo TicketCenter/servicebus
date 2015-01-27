@@ -2,8 +2,6 @@ from django.http import HttpResponse
 
 from api.dao.ConcertsDAO import ConcertsDAO
 
-__author__ = 'Nils'
-
 class Concerts():
     dao = ConcertsDAO()
 

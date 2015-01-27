@@ -1,7 +1,5 @@
 from api.config.API import API
 
-__author__ = 'Nils'
-
 class BaseDAO():
     api = API()
 

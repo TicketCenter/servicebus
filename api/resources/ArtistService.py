@@ -1,5 +1,4 @@
-from api.resources.utils import Reader
-
+from api.resources.utils.Reader import Reader
 
 class ArtistService(Reader):
     __API_URL = 'http://artistservice.ticketcenter.hanze.nberlijn.nl/api/'
