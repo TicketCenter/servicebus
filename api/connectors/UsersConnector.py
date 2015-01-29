@@ -22,8 +22,8 @@ class UsersConnector(BaseConnector, TicketService):
                                                        self.api_url() + 'users/login'))
 
     def connected_get_user(self, api_key, id, token):
-        return self.connect(api_key, self.http.request('POST',
-                                                       self.api_url() + 'users/' + id + '/' + token))
+        return self.connect(api_key, self.http.request('GET',
+                                                       self.api_url() + 'users/' + id + '/' + token).data)
 
     def connected_put_user(self, api_key, id, token):
         return self.connect(api_key, self.http.request('PUT',

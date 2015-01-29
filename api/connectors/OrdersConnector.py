@@ -23,8 +23,8 @@ class OrdersConnector(BaseConnector, TicketService):
 
     def connected_get_orders_registered_user(self, api_key, user_id, token):
         return self.connect(api_key, self.http.request('GET',
-                                                       self.api_url() + 'orders/' + user_id + '/' + token))
+                                                       self.api_url() + 'orders/' + user_id + '/' + token).data)
 
     def connected_get_order_registered_user(self, api_key, user_id, token, order_id):
         return self.connect(api_key, self.http.request('GET',
-                                                       self.api_url() + 'orders/' + user_id + '/' + token + '/' + order_id))
+                                                       self.api_url() + 'orders/' + user_id + '/' + token + '/' + order_id).data)

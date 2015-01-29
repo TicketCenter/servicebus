@@ -6,7 +6,7 @@
 """
 # TODO: Add valid API information
 class TicketService():
-    __API_URL = ''
+    __API_URL = 'http://ticketservice.ticketcenter.hanze.nberlijn.nl/'
     __API_KEY = ''
 
     def __init__(self):
